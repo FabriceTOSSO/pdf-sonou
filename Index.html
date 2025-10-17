@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hébergement PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            text-align: center;
+        }
+        .pdf-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .pdf-item {
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mes PDF en ligne</h1>
+
+    <div class="pdf-list">
+        <!-- PDF 1 -->
+        <div class="pdf-item">
+            <a href="image\TL.pdf" target="_blank">Voir / Télécharger PDF 1</a>
+        </div>
+        <!-- PDF 2 -->
+        <div class="pdf-item">
+           <embed src="image\TL.pdf" type="application/pdf" width="600" height="400">
+        </div>
+        <!-- PDF 3 -->
+        <div class="pdf-item">
+            <a href="pdf/mon-troisieme.pdf" target="_blank">Voir / Télécharger PDF 3</a>
+        </div>
+    </div>
+</body>
+</html>
